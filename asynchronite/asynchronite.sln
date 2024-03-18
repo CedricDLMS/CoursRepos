@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asynchronite", "asynchronite\asynchronite.csproj", "{FE5164BE-E682-4593-8022-FF4CA0BB9B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE5164BE-E682-4593-8022-FF4CA0BB9B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5164BE-E682-4593-8022-FF4CA0BB9B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5164BE-E682-4593-8022-FF4CA0BB9B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5164BE-E682-4593-8022-FF4CA0BB9B59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DEC6096-597E-4938-BD50-7C2DB0DC762A}
+	EndGlobalSection
+EndGlobal
