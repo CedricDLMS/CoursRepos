@@ -1,0 +1,17 @@
+﻿@model List<PokeType>
+
+<form asp-action="Create" asp-controller="Pokemons">
+	<input name="id" hidden />
+	<label> NOM du pokemon</label>
+	<input name="name" id="Name" />
+	<label> Type du pokemon</label>
+	@* <input name="pokeTypeId"/> *@
+	<select name="pokeTypeId">
+		<option value=""> Selectionnez un Type </option>
+		  @* @await Component.InvokeAsync("Create") *@
+		 <vc:Create></vc:Create>
+	</select>
+	<button type="submit"> Submit </button>
+</form>
+
+

@@ -1,0 +1,25 @@
+﻿@model List<PokeType>
+
+<div>
+	@if (@ViewBag.Message == null)
+	{
+		<form asp-action="Create">
+			<input name="id" hidden />
+			<label> NOM du pokemon</label>
+			<input name="name" id="Name" />
+			<label> Type du pokemon</label>
+			@* <input name="pokeTypeId"/> *@
+			<select name="pokeTypeId">
+				@foreach (var item in @Model)
+				{
+					<option value="@item.Id"> @item.Name </option>
+				}
+			</select>
+			<button type="submit"> Submit </button>
+		</form>
+	}
+	else
+	{
+		<h1> @ViewBag.Message </h1>
+	}
+</div>

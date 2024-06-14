@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="a-rocket-in-pixel-art-style-vector.jpg" />
+    <None Remove="CodeCafé Logo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="a-rocket-in-pixel-art-style-vector.jpg" />
+    <Resource Include="CodeCafé Logo.jpg" />
+  </ItemGroup>
+
+</Project>

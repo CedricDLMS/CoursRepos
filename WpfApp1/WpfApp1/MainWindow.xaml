@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Name="faceA" HorizontalAlignment="Left" Height="124" Margin="-230,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="130" Fill="#FFCDFFA6"/>
+        <Rectangle Name="faceB" HorizontalAlignment="Center" Height="147" Stroke="Black" VerticalAlignment="Center" Width="1" Fill="#FFACEBFB" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle Name="faceC" HorizontalAlignment="Left" Height="124" Margin="-239,298,0,0" Stroke="Black" VerticalAlignment="Top" Width="130" Fill="#FFCDFFA6"/>
+        <Slider Name="slider" HorizontalAlignment="Center" Margin="0,351,0,0" VerticalAlignment="Top" Width="120" ValueChanged="Slider_ValueChanged" Minimum="0" Maximum="1" />
+        <Label Name="sliderValue" Content="1" HorizontalAlignment="Center" Height="25" Margin="0,385,0,0" VerticalAlignment="Top" Width="24" Background="White"/>
+    </Grid>
+</Window>

@@ -1282,12 +1282,20 @@
 
 //}
 
-int y = 2;
-Console.WriteLine(y);
-int? z = null;
+//int y = 2;
+//Console.WriteLine(y);
+//int? z = null;
 
-y = z ?? -14;
-Console.WriteLine(y);
-z = 50;
-y = z ?? -14;
-Console.WriteLine(y);
+//y = z ?? -14;
+//Console.WriteLine(y);
+//z = 50;
+//y = z ?? -14;
+//Console.WriteLine(y);
+
+
+bool i = false; 
+
+if(i = true)
+{
+    Console.WriteLine(i);
+}

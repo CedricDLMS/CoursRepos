@@ -1,0 +1,30 @@
+﻿@model List<Pokemon>
+
+<style>
+	.pokedex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+	}
+
+	.pokemon-card {
+		border: 1px solid #ccc;
+		padding: 15px;
+		border-radius: 8px;
+		text-align: center;
+	}
+</style>
+<div class="container">
+	<h1 class="text-center my-4"> POKEDEX </h1>
+	<div class="pokedex-container">
+		@foreach (var item in Model)
+		{
+			<div class="pokemon-card">
+				<h2> Nom : @item.Name </h2>
+				<p> PokeId : @item.Id</p>
+				<p> TypeId : @item.PokeTypeId </p>
+			</div>
+		}
+	</div>
+</div>
